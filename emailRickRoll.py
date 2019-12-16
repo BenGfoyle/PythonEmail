@@ -12,13 +12,11 @@ import random
 port = 465  # For SSL
 emailAddr = YOUR_GMAIL
 password = YOUR_PASSWORD
-recAddr = ["noah.otten","matthew.birney","michael.wilson","adam.duffy",\
-"tristian.mooney","robert.hruby","sarahann.kilduff","courtney.mclean",\
-"amy.williams","johnathon.fey","shane.smullen"]
-rec = random.choice(recAddr) + ".2017@mumail.ie"
+recAddr = []
+rec = random.choice(recAddr) 
 
 msgRoot = MIMEMultipart('related')
-msgRoot['Subject'] = 'EP Fourth Year Class'
+msgRoot['Subject'] = ''
 msgRoot['From'] = emailAddr
 
 msgRoot.preamble = 'This is a multi-part message in MIME format.'
